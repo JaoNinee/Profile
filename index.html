@@ -1,50 +1,196 @@
-<html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For Her ✨</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:0;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(255,255,255,0.06);
+    animation:float 10s infinite ease-in-out;
+    backdrop-filter: blur(5px);
+}
+
+.circle:nth-child(1){
+    width:220px;
+    height:220px;
+    top:10%;
+    left:10%;
+}
+
+.circle:nth-child(2){
+    width:160px;
+    height:160px;
+    bottom:10%;
+    right:15%;
+    animation-delay:2s;
+}
+
+.circle:nth-child(3){
+    width:100px;
+    height:100px;
+    top:60%;
+    left:40%;
+    animation-delay:4s;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-25px);
+    }
+}
+
+.card{
+    position:relative;
+    z-index:2;
+    width:360px;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter: blur(18px);
+    border:1px solid rgba(255,255,255,0.15);
+    box-shadow:0 8px 40px rgba(0,0,0,0.4);
+    text-align:center;
+    animation:fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin:auto;
+    background:url('./jpg.png') center center/cover no-repeat;
+    border:4px solid rgba(255,255,255,0.25);
+    box-shadow:0 0 30px rgba(255,255,255,0.15);
+}
+
+
+h1{
+    margin-top:20px;
+    font-size:32px;
+}
+
+p{
+    margin-top:12px;
+    color:#d1d5db;
+    line-height:1.6;
+    font-size:15px;
+}
+
+.glow{
+    color:#60a5fa;
+    font-weight:700;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:28px;
+    padding:14px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(90deg,#3b82f6,#8b5cf6);
+    font-weight:600;
+    transition:0.35s;
+    box-shadow:0 0 25px rgba(99,102,241,0.45);
+}
+
+.btn:hover{
+    transform:translateY(-4px) scale(1.04);
+    box-shadow:0 0 35px rgba(99,102,241,0.7);
+}
+
+.social{
+    margin-top:24px;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+}
+
+.social a{
+    color:white;
+    font-size:22px;
+    transition:0.3s;
+}
+
+.social a:hover{
+    transform:scale(1.3);
+    color:#60a5fa;
+}
+</style>
+</head>
 
 <body>
- <a href>"https://www.mcu.ac.th/"</a href>
 
+<div class="bg">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
 
+<div class="card">
+    <div class="avatar"></div>
 
-  <center><img src="AI.jpg" width="300">
-</center> 
-<br>
-  <h1 style="text-align:center;">ประวัติส่วนตัว </h1></cantr> 
-   <p style="text-align:center;color: #f99b03;">ชื่อ:สามเณรมงคล เนาวรัตน์ </p>
-   <p style="text-align:center;color: #978803;">อายุ: 18 ปี</p>
-   <p style="text-align:center;color: #05fd1a;">เกิด:วันที่ 13 มกราคม 2550 </p>
-   <p style="text-align:center;color: #4f05fb;">เบอร์โทรศัพท์:0902205972</p>
-   <p style="text-align:center;color: #ff00e6;">Gmail: mngkl13012550@gmail.com</p>
+    <h1>Not a player,just naturally attractivr <span class="glow">by Mr.Niht</Mr></span> 😎</h1>
 
-  
-  <style>
-    table {
-      border-collapse: collapse; 
-      width: 60%;
-      margin: auto; 
-    }
-    th, td {
-      border: 1px solid black; 
-      padding: 10px;
-      text-align: center;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
-</head>
-   <table>
-  <tr>
-    <th><img src="A1.jpg" width="300"></th>
-    <th><img src="A2.jpg" width="250"></th>
-    <th><img src="A3.JPG" width="300"></th>
-  </tr>
- 
-</table>
+    <p>
+        เขียนโค้ดก็ได้ เล่นมุกก็เป็น  
+        ถ้าเธอใจเย็นพอ เดี๋ยวจะพาไปกินชาบู ✨
+    </p>
+
+    <a href="https://www.instagram.com/mnntha_/" class="btn" target="_blank">
+    DM Me 💌
+</a>
+    <div class="social">
+        <a href="#">🌐</a>
+        <a href="#">📸</a>
+        <a href="#">🎵</a>
+    </div>
+</div>
+
 </body>
-
- 
-
-
-
-</html
-
+</html>
